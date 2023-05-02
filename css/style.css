@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Manjari:wght@100;400&family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.container .nav {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  letter-spacing: 1.5px;
+}
+.container .nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+  font-family: "Chewy", cursive;
+  text-transform: uppercase;
+}
+.container .nav__listlogo {
+  list-style: none;
+  margin-right: auto;
+}
+.container .nav__listitem {
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+.container .nav__listitem::after {
+  content: "";
+  width: 0;
+  height: 0.35rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 0.8rem;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  transition: width 250ms ease-in;
+}
+.container .nav__listitem:hover::after, .container .nav__listitem:focus::after {
+  width: 70%;
+}
+.container .nav__listitem:hover ul, .container .nav__listitem:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+.container .nav__listitemdrop {
+  position: absolute;
+  top: 4.25rem;
+  left: -1rem;
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  width: 12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: width 250ms ease-in;
+  letter-spacing: 1.5px;
+}
+.container .nav__listitemdrop li {
+  list-style: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: background-color 300ms ease-in-out;
+  background-image: linear-gradient(90deg, #d3d3d3 0%, #ffffff 100%);
+}
+.container .nav__listitemdrop li:hover, .container .nav__listitemdrop li:focus {
+  background: rgb(212, 212, 212);
+  background-image: linear-gradient(90deg, #e6e6e6 0%, #caabdf 100%);
+  letter-spacing: 1.5px;
+}/*# sourceMappingURL=style.css.map */
