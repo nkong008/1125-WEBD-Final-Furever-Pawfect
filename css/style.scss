@@ -15,43 +15,58 @@
 
 //Creating scss variables
 $radius: 0.2rem;
-$radius1: 1rem;
+$radius1: 2rem;
 $whiteColor: rgba(255, 255, 255, 1);
 $grayColor: rgba(128, 128, 128, 1);
 $lightGrayColor: rgba(128, 128, 128, 0.4);
 $blueColor: rgba(0, 0, 255, 1);
-$manjari: 'Manjari', sans-serif;
-$chewy: 'Chewy', cursive;
+$darkBlue: rgb(12, 12, 64);
+$manjari: 'Manjari',
+sans-serif;
+$chewy: 'Chewy',
+cursive;
 $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
+$fontSize1: 3.5em;
+$letterSpacing: 1.5px;
 
 // start of navigation////////////////////////////////////////////////////
 .container {
+    // width: 100vw;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    // height: 100vh;
     background-color: $whiteColor;
-    
+
 
     .nav {
-        position: fixed;
+        position: relative;
         //helps show navigation dropdown you need z-index: 1; or else you wont be able to access the dropdown
         z-index: 1;
-        width: 100vw;
+        // width: 100vw;
+        width: 100%;
         box-shadow: 0 0 10px $grayColor;
         letter-spacing: 1.5px;
+        font-size: 1rem;
+        background-color: $whiteColor;
 
         // class concatentaion
         // originally it would have been .nav__list
 
         &__list {
             display: flex;
-            justify-content: flex-end; 
+            justify-content: flex-end;
             align-items: center;
             //gap property sets the gaps(gutters) inbewteen rows and columns
             gap: 2rem;
             margin: 0 2rem;
             font-family: 'Chewy', cursive;
             text-transform: uppercase;
-            
+            a {
+                text-decoration: none;
+                // color: black;  
+                color: rgb(0, 0, 0);
+                // text-shadow: 1px 2px 4px rgb(181, 150, 200);  
+            }
 
             &logo {
                 list-style: none;
@@ -64,8 +79,8 @@ $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
                 font-weight: bold;
                 position: relative;
                 padding: 1.5rem 1rem;
-                
-                
+                transition: all 0.3s ease-in linear;
+
 
                 // pseudo class
                 // would originally be .list:item
@@ -74,19 +89,27 @@ $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
                 &::after {
                     content: "";
                     width: 0;
-                    height: 0.35rem;
+                    height: 0.20rem;
                     border-radius: $radius;
                     position: absolute;
                     left: 1rem;
                     bottom: 0.8rem;
                     background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
-                    transition: width 250ms ease-in;
+                    transition: width 200ms ease-in;
                 }
 
                 &:hover::after,
                 &:focus::after {
                     width: 70%;
                 }
+                // }
+
+                //     &:hover{
+                //     background-color: $grayColor;
+                //     // color: $whiteColor;
+                //     border-radius: $radius1;
+                //     padding: 10px 15px;
+                // }
 
                 &:hover ul,
                 &:focus ul {
@@ -96,7 +119,7 @@ $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
 
                 &drop {
                     position: absolute;
-                    top: 4.25rem;
+                    top: 4.5rem;
                     left: -1rem;
                     box-shadow: 0 0 10px $grayColor;
                     background-color: $whiteColor;
@@ -112,18 +135,21 @@ $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
                     letter-spacing: 1.5px;
                     
 
+
                     li {
                         list-style: none;
                         padding: 0.5rem;
                         border-radius: $radius1;
-                        transition: background-color 300ms ease-in-out;
-                        background-image: linear-gradient(90deg, #d3d3d3 0%, #ffffff 100%);
+                        transition: all background-color 300ms ease-in-out;
+                        // background-image: linear-gradient(90deg, #d3d3d3 0%, #ffffff 100%);
                         // box-shadow: 0 0 10px rgb(189, 189, 189);
+                        background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                        
 
                         &:hover,
                         &:focus {
-                            background: rgb(212, 212, 212);
-                            background-image: linear-gradient(90deg, #e6e6e6 0%, #caabdf 100%);
+                            background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                            // background-image: linear-gradient(62deg, #9095d0 0%, #552cbf 100%);
                             letter-spacing: 1.5px;
                             
                         }
@@ -132,15 +158,120 @@ $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
             }
         }
     }
-}
-//end of navigation section/////////////////////////////////////////////////////////////////////////////
-//start of home page
-main {
 
+    //end of navigation section/////////////////////////////////////////////////////////////////////////////
+    // start of main home page
+    div.homePage {
+        position: relative;
+        h1 {
+            font-family: 'Chewy', cursive;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding-left: 90px;
+            color: #6e68cb;
+            font-size: 3.5em;
+            padding-top: 150px;
+        }
+
+        div.mainImgs {
+            display: block;
+            img.catHome {
+                position: relative;
+                width: 550px;
+                height: 550px;
+                float: right;
+                padding-right: 40px;
+                bottom: 200px;
+                right: 300px;
+            }
+
+            img.dogHome {
+                position: relative;
+                width: 350px;
+                height: 350px;
+                float: right;
+                padding-right: 40px;
+                top: 40px;
+                left: 490px;
+
+            }
+
+            img.dots1 {
+                position: relative;
+                width: 150px;
+                height: 200px;
+                float: right;
+                padding-right: 40px;
+                bottom: 120px;
+                left: 700px;
+                opacity: 50%;
+         
+            }
+
+            img.dots2 {
+                position: relative;
+                width: 180px;
+                height: 200px;
+                float: right;
+                padding-right: 40px;
+                top: 400px;
+                left: 500px;
+                opacity: 50%;
+                position: absolute;
+                
+            }
+        }
+
+        p {
+            padding-left: 90px;
+            padding-top: 60px;
+            font-size: 1rem;
+            font-family: 'Manjari', sans-serif;
+        }
+
+        p.click {
+            padding-left: 120px;
+            color: #6e68cb;
+        }
+
+        section.btn {
+            padding-left: 200px;
+            padding-top: 15px;
+
+            button.homeBtn {
+                border: none;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                color: $whiteColor;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+
+            button.homeBtn:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                // box-shadow: 0 0 5px $darkBlue;
+            }
+
+            // div.catHomePage {
+            //     position: absolute;
+            // img.catHome {
+            //     position: absolute;
+            //     width: 50%;
+            //     height:50%;
+            //     float: top;
+        }
+
+        // }
+
+    }
 }
-//end of home page/////////////////////////////////////////////////////
+
+//end of main home page////////////////////////////////////////////////
 //start of footer//////
-footer {
+footer {}
 
-}
 //end of footer////////////////////////////////////////////////////////
