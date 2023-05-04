@@ -12,7 +12,7 @@
 }
 .container .nav {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   box-shadow: 0 0 10px rgb(128, 128, 128);
   letter-spacing: 1.5px;
@@ -101,6 +101,8 @@
   color: #6e68cb;
   font-size: 3.5em;
   padding-top: 150px;
+  position: relative;
+  z-index: 2;
 }
 .container div.homePage div.mainImgs {
   display: block;
@@ -172,4 +174,60 @@
 .container div.homePage section.btn button.homeBtn:hover {
   color: rgb(255, 255, 255);
   background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+}
+.container div.homePage div.videoBackGround {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div.homePage div.videoBackGround video.FureverVideo {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  border-radius: 2rem;
+}
+.container div.homePage div.wordSection {
+  width: 100%;
+  height: 20%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 50px;
+}
+.container div.homePage div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 50px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container div.homePage div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  bottom: 105px;
+  left: 150px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+.container div.homePage div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+footer {
+  width: 100vw;
+  height: 30%;
+  background-color: #5021c9;
 }/*# sourceMappingURL=style.css.map */
