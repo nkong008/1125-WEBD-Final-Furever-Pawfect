@@ -61,6 +61,7 @@ $letterSpacing: 1.5px;
             margin: 0 2rem;
             font-family: 'Chewy', cursive;
             text-transform: uppercase;
+
             a {
                 text-decoration: none;
                 // color: black;  
@@ -102,6 +103,7 @@ $letterSpacing: 1.5px;
                 &:focus::after {
                     width: 70%;
                 }
+
                 // }
 
                 //     &:hover{
@@ -133,7 +135,7 @@ $letterSpacing: 1.5px;
                     visibility: hidden;
                     transition: width 250ms ease-in;
                     letter-spacing: 1.5px;
-                    
+
 
 
                     li {
@@ -144,14 +146,14 @@ $letterSpacing: 1.5px;
                         // background-image: linear-gradient(90deg, #d3d3d3 0%, #ffffff 100%);
                         // box-shadow: 0 0 10px rgb(189, 189, 189);
                         background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
-                        
+
 
                         &:hover,
                         &:focus {
                             background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
                             // background-image: linear-gradient(62deg, #9095d0 0%, #552cbf 100%);
                             letter-spacing: 1.5px;
-                            
+
                         }
                     }
                 }
@@ -161,85 +163,335 @@ $letterSpacing: 1.5px;
 
     //end of navigation section/////////////////////////////////////////////////////////////////////////////
     // start of main home page
-    div.homePage {
-        position: relative;
+    main.homeMain {
+        width: 100vw;
+        height: 100vh;
 
-        h1 {
-            font-family: 'Chewy', cursive;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            padding-left: 90px;
-            color: #6e68cb;
-            font-size: 3.5em;
-            padding-top: 150px;
+        div.homePage {
             position: relative;
-            z-index: 2;
-        }
 
-        div.mainImgs {
-            display: block;
-            img.catHome {
+            h1 {
+                font-family: 'Chewy', cursive;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                padding-left: 90px;
+                color: #6e68cb;
+                font-size: 3.5em;
+                padding-top: 150px;
                 position: relative;
-                width: 550px;
-                height: 550px;
-                float: right;
-                padding-right: 40px;
-                bottom: 200px;
-                right: 300px;
+                z-index: 2;
             }
 
-            img.dogHome {
-                position: relative;
-                width: 350px;
-                height: 350px;
-                float: right;
-                padding-right: 40px;
-                top: 40px;
-                left: 490px;
+            div.mainImgs {
+                display: block;
 
+                img.catHome {
+                    position: relative;
+                    width: 550px;
+                    height: 550px;
+                    float: right;
+                    padding-right: 40px;
+                    bottom: 200px;
+                    right: 300px;
+                }
+
+                img.dogHome {
+                    position: relative;
+                    width: 350px;
+                    height: 350px;
+                    float: right;
+                    padding-right: 40px;
+                    top: 40px;
+                    left: 490px;
+
+                }
+
+                img.dots1 {
+                    position: relative;
+                    width: 150px;
+                    height: 200px;
+                    float: right;
+                    padding-right: 40px;
+                    bottom: 120px;
+                    left: 700px;
+                    opacity: 50%;
+
+                }
+
+                img.dots2 {
+                    position: relative;
+                    width: 180px;
+                    height: 200px;
+                    float: right;
+                    padding-right: 40px;
+                    top: 400px;
+                    left: 500px;
+                    opacity: 50%;
+                    position: absolute;
+
+                }
+            }
+
+            p {
+                padding-left: 90px;
+                padding-top: 60px;
+                font-size: 1rem;
+                font-family: 'Manjari', sans-serif;
+                letter-spacing: 1px;
+            }
+
+            p.click {
+                padding-left: 90px;
+                color: #6e68cb;
+            }
+
+            section.btn {
+                padding-left: 200px;
+                padding-top: 15px;
+
+                button.homeBtn {
+                    border: none;
+                    font-family: 'Chewy', cursive;
+                    font-size: 1rem;
+                    background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                    color: $whiteColor;
+                    padding: 10px;
+                    border-radius: 2rem;
+                    letter-spacing: 1.5px;
+                    transition: all 200ms linear;
+                }
+
+                button.homeBtn:hover {
+                    color: rgb(255, 255, 255);
+                    background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                    // box-shadow: 0 0 5px $darkBlue;
+                    box-shadow: 0 0 10px $grayColor;
+                }
+
+                // div.catHomePage {
+                //     position: absolute;
+                // img.catHome {
+                //     position: absolute;
+                //     width: 50%;
+                //     height:50%;
+                //     float: top;
+                // }
+            }
+
+            div.videoBackGround {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                video.FureverVideo {
+                    width: 70%;
+                    height: auto;
+                    position: absolute;
+                    z-index: 3;
+                    border-radius: $radius1;
+
+                }
+            }
+
+            div.wordSection {
+                width: 100%;
+                height: 20%;
+                // img.wordImg {
+                //     background-repeat: repeat-x;
+                //     width: 50%;
+                //     height: 40%;
+                // }
+                background-image: url(../images/background.png);
+                border-image-repeat: repeat-x;
+                position: absolute;
+                margin-top: 50px;
+
+                div.transparentBack {
+                    position: relative;
+                    // justify-content: center;
+                    // align-items: center;
+                    // position: absolute;
+                    background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+                    width: 900px;
+                    height: 200px;
+                    display: flex;
+                    border-radius: $radius1;
+                    opacity: 95%;
+                    top: 50px;
+                    left: 275px;
+                    // transition: 100s linear;
+                    transition: all 0.3s ease-in linear;
+
+                    h1.quoteHome {
+                        position: relative;
+                        font-family: 'Chewy', cursive;
+                        color: white;
+                        font-size: 3rem;
+                        bottom: 105px;
+                        left: 150px;
+                        text-transform: lowercase;
+                        letter-spacing: 1.5px;
+                    }
+                }
+
+                div.transparentBack:hover {
+                    background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                    box-shadow: 0 0 10px $grayColor;
+                }
+
+            }
+
+        }
+    }
+
+
+    //start of footer//////
+    section.footer {
+        // background-color: rgb(68, 68, 68);
+        background-color: #142d4d;
+        // position: relative;
+
+        footer {
+            width: 100%;
+            height: 120px;
+            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+            // background-color: #142d4d;
+            background-color: $whiteColor;
+            position: absolute;
+            // margin-bottom: auto;
+            // display: block;
+            top: 2080px;
+
+            ul.ulFooter {
+                display: flex;
+                list-style-type: none;
+
+                img {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: 650px;
+                    // padding-top: 5px;
+                    top: 10px;
+                    padding: 2px;
+
+                }
+
+                img:hover {
+                    box-shadow: 0 0 10px $grayColor;
+                    border-radius: $radius1;
+                }
+            }
+
+            h1.h1Footer {
+                color: rgb(0, 0, 0);
+                // color: white;
+                font-family: 'Manjari', sans-serif;
+                text-align: center;
+                // position: absolute;
+                font-size: 1rem;
+                padding-top: 15px;
+            }
+        }
+
+
+    }
+
+
+    //end of footer////////////////////////////////////////////////////////
+
+}
+
+//end of main home page////////////////////////////////////////////////
+
+// start of about page
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: $whiteColor;
+
+    div.aboutPage {
+        font-family: 'Chewy', cursive;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-left: 90px;
+        color: #6e68cb;
+        font-size: 2em;
+        padding-top: 150px;
+        position: relative;
+        z-index: 2;
+        left: 40px;
+
+        div.aboutImgs {
+            // position: absolute;
+            // position: relative;
+
+            img.dogAbout {
+                // position: relative;
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                // float: right;
+                padding-right: 70px;
+                top: 120px;
+                left: 725px;
+                z-index: 3;
             }
 
             img.dots1 {
-                position: relative;
-                width: 150px;
-                height: 200px;
+                position: absolute;
+                width: 160px;
+                height: 210px;
                 float: right;
                 padding-right: 40px;
-                bottom: 120px;
-                left: 700px;
+                top: 100px;
+                left: 1150px;
                 opacity: 50%;
-         
+
             }
 
             img.dots2 {
-                position: relative;
+                position: absolute;
                 width: 180px;
                 height: 200px;
                 float: right;
                 padding-right: 40px;
                 top: 400px;
-                left: 500px;
+                left: 600px;
                 opacity: 50%;
                 position: absolute;
-                
+
+
             }
         }
 
-        p {
-            padding-left: 90px;
-            padding-top: 60px;
-            font-size: 1rem;
+        p.aboutP {
+            position: absolute;
             font-family: 'Manjari', sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            padding-top: 60px;
         }
 
-        p.click {
-            padding-left: 120px;
+
+        p.ClickAbout {
+            position: absolute;
             color: #6e68cb;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 560px;
+            left: 150px;
         }
 
-        section.btn {
-            padding-left: 200px;
-            padding-top: 15px;
+        section.Aboutbtn {
+            position: relative;
+            padding-left: 175px;
+            top: 350px;
 
             button.homeBtn {
                 border: none;
@@ -256,50 +508,20 @@ $letterSpacing: 1.5px;
             button.homeBtn:hover {
                 color: rgb(255, 255, 255);
                 background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
-                // box-shadow: 0 0 5px $darkBlue;
                 box-shadow: 0 0 10px $grayColor;
             }
-
-            // div.catHomePage {
-            //     position: absolute;
-            // img.catHome {
-            //     position: absolute;
-            //     width: 50%;
-            //     height:50%;
-            //     float: top;
-            // }
         }
 
-        div.videoBackGround {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
-            top: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            video.FureverVideo  {
-                width: 70%;
-                height: auto;
-                position: absolute;
-                z-index: 3;
-                border-radius: $radius1;
-                
-            }
-        }
         div.wordSection {
             width: 100%;
-            height: 20%;
-            // img.wordImg {
-            //     background-repeat: repeat-x;
-            //     width: 50%;
-            //     height: 40%;
-            // }
+            height: 100%;
             background-image: url(../images/background.png);
             border-image-repeat: repeat-x;
+            // position: absolute;
             position: absolute;
-            margin-top: 50px;
+            margin-top: 550px;
+            right: 40px;
+
             div.transparentBack {
                 position: relative;
                 // justify-content: center;
@@ -315,94 +537,961 @@ $letterSpacing: 1.5px;
                 left: 275px;
                 // transition: 100s linear;
                 transition: all 0.3s ease-in linear;
+
                 h1.quoteHome {
                     position: relative;
                     font-family: 'Chewy', cursive;
                     color: white;
                     font-size: 3rem;
-                    bottom: 105px;
-                    left: 150px;
+                    top: 30px;
+                    left: 200px;
                     text-transform: lowercase;
                     letter-spacing: 1.5px;
                 }
             }
+
             div.transparentBack:hover {
                 background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
                 box-shadow: 0 0 10px $grayColor;
             }
-       
+
         }
+
+
+    }
+
+    //start of footer//////
+    section.footerAbout {
+        // background-color: rgb(68, 68, 68);
+        background-color: #142d4d;
+        // position: relative;
+
+        footer {
+            width: 100%;
+            height: 120px;
+            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+            // background-color: #142d4d;
+            background-color: $whiteColor;
+            position: absolute;
+            // margin-bottom: auto;
+            // display: block;
+            top: 1230px;
+
+            ul.ulFooter {
+                display: flex;
+                list-style-type: none;
+
+                img {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: 650px;
+                    // padding-top: 5px;
+                    top: 5px;
+                    padding: 2px;
+
+                }
+
+                img:hover {
+                    box-shadow: 0 0 10px $grayColor;
+                    border-radius: $radius1;
+                }
+            }
+
+            h1.h1Footer {
+                color: rgb(0, 0, 0);
+                // color: white;
+                font-family: 'Manjari', sans-serif;
+                text-align: center;
+                // position: absolute;
+                font-size: 1rem;
+                padding-top: 15px;
+            }
+        }
+
 
     }
 
 
- //start of footer//////
- div.footer {
-    background-color: rgb(68, 68, 68);
-    position: relative;
+    //end of footer////////////////////////////////////////////////////////
 
-    footer {
-        width: 100%;
-        // height: 100px;
-        background-color: aqua;
-        // position: absolute;
-        // bottom: 0%;
-        // top: 900px;
-        // margin-bottom: auto;
+}
 
-        ul {
+// end of about page////////////////////////////////////////////////////
+
+//start of pets page
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: $whiteColor;
+
+    div.petsPage {
+        position: relative;
+
+        h1.fluffyFriends {
+            font-family: 'Chewy', cursive;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #6e68cb;
+            font-size: 4em;
+            padding-top: 150px;
+            position: relative;
+            z-index: 2;
+        }
+
+        ul.petsImgs {
             display: flex;
             list-style-type: none;
+            // position: absolute;
+            position: relative;
+            height: 100px;
+            bottom: 70px;
 
-            li {
-                width: 128px;
-                height: 128px;
-                //need a element to propery display items by using display block
-                a {
-                    width: 128px;
-                    height: 128px;
-                    //blcok needed otherwise content will not show
-                    display: block;
-                    transition: all 200ms linear;
-                }
-                //after each image you can position your image by using numbered px units to show a spacific image 
-                //remember to use easy units like 100's (especially when creating the image)
+            img {
+                width: 350px;
+                height: 350px;
+                display: flex;
+                transform: translate(60%, 50%);
+                // justify-content: space-evenly;
+                padding: 20px;
+                margin-bottom: 60px;
+                z-index: 1;
+                transition: all 300s ease-in-out linear;
 
-                a#facebook {
-                    background: url("../images/socialsColor.png") 0px 0px;
-                }
+            }
 
-                a#instagram {
-                    background: url("../images/socialsColor.png") 128px 0px;
-                }
+            img:hover {
+                border-radius: 50%;
+                box-shadow: 0 0px 10px 10px $lightGrayColor;
+                filter: grayscale(100%);
 
-                a#twitter {
-                    background: url("../images/socialsColor.png")256px 0px;
-                }
-
-                //hover state/////
-
-                a#facebook:hover {
-                    background: url("../images/socialsBW.png") 0px 0px;
-                }
-
-                a#instagram:hover {
-                    background: url("../images/socialsBW.png") 128px 0px;
-                }
-
-                a#twitter:hover {
-                    background: url("../images/socialsBW.png")256px 0px;
-                }
 
             }
         }
+
+        section.PetsBtn1 {
+            position: relative;
+            padding-left: 340px;
+            top: 400px;
+            z-index: 5;
+            width: 20px;
+
+            button.dogBtn {
+                // padding-bottom: 200px;
+                border: none;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                color: $whiteColor;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+
+            button.dogBtn:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+        }
+
+        section.Petsbtn2 {
+            position: relative;
+            left: 680px;
+            top: 360px;
+            z-index: 5;
+            width: 20px;
+
+            button.catBtn {
+                border: none;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                color: $whiteColor;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+
+            button.catBtn:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+        }
+
+        section.Petsbtn3 {
+            position: relative;
+            left: 1050px;
+            top: 320px;
+            z-index: 5;
+            width: 20px;
+
+            button.rodentBtn {
+                border: none;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                color: $whiteColor;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+
+            button.rodentBtn:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+        }
+
+        div.AboutPets {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #5835b2;
+            top: 500px;
+
+            h1.MorePets {
+                font-family: 'Chewy', cursive;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 4em;
+                padding-top: 150px;
+                position: relative;
+                z-index: 2;
+            }
+
+            h1.MorePets:hover {
+                color: #86e3ce;
+            }
+
+            p {
+                position: absolute;
+                color: #ffffff;
+                font-family: 'Manjari', sans-serif;
+                font-size: 1rem;
+                top: 360px;
+                left: 390px;
+                letter-spacing: 1px;
+            }
+
+            p.TakeQuizBelow {
+                position: absolute;
+                color: #ffffff;
+                font-family: 'Manjari', sans-serif;
+                font-size: 1rem;
+                top: 600px;
+                left: 650px;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+
+        }
+
+        section.TakeQuizBtn {
+            position: relative;
+            left: 700px;
+            top: 420px;
+            z-index: 5;
+            width: 20px;
+
+            button.TakeQuiz {
+                border: none;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                // background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                background-color: #86e3ce;
+                // color: $whiteColor;
+                color: #000000;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+
+            button.TakeQuiz:hover {
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                color: white;
+            }
+        }
+
+
+        div.wordSection {
+            width: 100%;
+            height: 40%;
+            background-image: url(../images/background.png);
+            border-image-repeat: repeat-x;
+            // position: absolute;
+            position: absolute;
+            margin-top: 530px;
+            right: 10px;
+
+            div.transparentBack {
+                position: relative;
+                // justify-content: center;
+                // align-items: center;
+                // position: absolute;
+                background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+                width: 900px;
+                height: 200px;
+                display: flex;
+                border-radius: $radius1;
+                opacity: 95%;
+                top: 45px;
+                // bottom: 5px;
+                left: 275px;
+                // transition: 100s linear;
+                transition: all 0.3s ease-in linear;
+
+                h1.quoteHome {
+                    position: relative;
+                    font-family: 'Chewy', cursive;
+                    color: white;
+                    font-size: 3rem;
+                    top: 30px;
+                    left: 70px;
+                    text-transform: lowercase;
+                    letter-spacing: 1.5px;
+                }
+            }
+
+            div.transparentBack:hover {
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+        }
     }
+
+
+
+    //start of footer//////
+    section.footerPets {
+        // background-color: rgb(68, 68, 68);
+        background-color: #142d4d;
+        // position: relative;
+
+        footer {
+            width: 100%;
+            height: 120px;
+            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+            // background-color: #142d4d;
+            background-color: $whiteColor;
+            position: absolute;
+            // margin-bottom: auto;
+            // display: block;
+            top: 2180px;
+
+            ul.ulFooter {
+                display: flex;
+                list-style-type: none;
+
+                img {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: 650px;
+                    // padding-top: 5px;
+                    top: 10px;
+                    padding: 2px;
+
+                }
+
+                img:hover {
+                    box-shadow: 0 0 10px $grayColor;
+                    border-radius: $radius1;
+                }
+            }
+
+            h1.h1Footer {
+                color: rgb(0, 0, 0);
+                // color: white;
+                font-family: 'Manjari', sans-serif;
+                text-align: center;
+                // position: absolute;
+                font-size: 1rem;
+                padding-top: 15px;
+            }
+        }
+
+
+    }
+
+
+    //end of footer////////////////////////////////////////////////////////
+
 }
 
+//end of pets page//////////////////////////////////////////////////
 
-//end of footer////////////////////////////////////////////////////////
+//start of dog page 
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: $whiteColor;
+
+    div.DogPage {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/dog.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    section.DogSection {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+        h1.names {
+            font-family: 'Chewy', cursive;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #6e68cb;
+            font-size: 4em;
+            padding-top: 150px;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            color: #000000;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 60px;
+            left: 330px;
+            letter-spacing: 1px;
+            // width: 100vw;
+
+        }
+        p.DogsToCats {
+            // position: relative;
+            // color: #000000;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 130px;
+            left: 600px;
+            letter-spacing: 1px;
+            color: #6e68cb;
+            // width: 50px;
+            // width: 10px;
+        }
+        section.DogsToCatsBtn {
+            position: relative;
+            left: 690px;
+            top: 155px;
+            z-index: 5;
+            width: 20px;
+            button.CatPage {
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                border: none;
+                color: $whiteColor;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+            button.CatPage:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+
+        }
+
+        div.wordSection {
+            width: 100%;
+            height: 40%;
+            background-image: url(../images/background.png);
+            border-image-repeat: repeat-x;
+            // position: absolute;
+            position: absolute;
+            margin-top: 300px;
+            right: 10px;
+
+            div.transparentBack {
+                position: relative;
+                background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+                width: 900px;
+                height: 200px;
+                display: flex;
+                border-radius: $radius1;
+                opacity: 95%;
+                top: 45px;
+                // bottom: 5px;
+                left: 275px;
+                // transition: 100s linear;
+                transition: all 0.3s ease-in linear;
+
+                h1.quoteHome {
+                    position: relative;
+                    font-family: 'Chewy', cursive;
+                    color: white;
+                    font-size: 3rem;
+                    top: 30px;
+                    left: 140px;
+                    text-transform: lowercase;
+                    letter-spacing: 1.5px;
+                }
+            }
+
+            div.transparentBack:hover {
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+        }
+    }
+
+    
+    //start of footer//////
+    section.footerDogs {
+        // background-color: rgb(68, 68, 68);
+        background-color: #142d4d;
+        // position: relative;
+
+        footer {
+            width: 100%;
+            height: 120px;
+            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+            // background-color: #142d4d;
+            background-color: $whiteColor;
+            position: absolute;
+            // margin-bottom: auto;
+            // display: block;
+            top: 2000px;
+
+            ul.ulFooter {
+                display: flex;
+                list-style-type: none;
+
+                img {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: 650px;
+                    // padding-top: 5px;
+                    top: 10px;
+                    padding: 2px;
+
+                }
+
+                img:hover {
+                    box-shadow: 0 0 10px $grayColor;
+                    border-radius: $radius1;
+                }
+            }
+
+            h1.h1Footer {
+                color: rgb(0, 0, 0);
+                // color: white;
+                font-family: 'Manjari', sans-serif;
+                text-align: center;
+                // position: absolute;
+                font-size: 1rem;
+                padding-top: 15px;
+            }
+        }
+
+
+    }
+
+
+    //end of footer////////////////////////////////////////////////////////
 
 }
 
+//end of dog page////////////////////////////////////////////////////////////////
+//start of cat page
 
-//end of main home page////////////////////////////////////////////////
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: $whiteColor;
+
+    div.CatPage {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/cat.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    section.CatSection {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+        h1.names {
+            font-family: 'Chewy', cursive;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #6e68cb;
+            font-size: 4em;
+            padding-top: 150px;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            color: #000000;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 60px;
+            left: 330px;
+            letter-spacing: 1px;
+            // width: 100vw;
+
+        }
+        p.DogsToCats {
+            // position: relative;
+            // color: #000000;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 130px;
+            left: 600px;
+            letter-spacing: 1px;
+            color: #6e68cb;
+            // width: 50px;
+            // width: 10px;
+        }
+        section.DogsToCatsBtn {
+            position: relative;
+            left: 690px;
+            top: 155px;
+            z-index: 5;
+            width: 20px;
+            button.CatPage {
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                border: none;
+                color: $whiteColor;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+            button.CatPage:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+
+        }
+
+        div.wordSection {
+            width: 100%;
+            height: 40%;
+            background-image: url(../images/background.png);
+            border-image-repeat: repeat-x;
+            // position: absolute;
+            position: absolute;
+            margin-top: 300px;
+            right: 10px;
+
+            div.transparentBack {
+                position: relative;
+                background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+                width: 900px;
+                height: 200px;
+                display: flex;
+                border-radius: $radius1;
+                opacity: 95%;
+                top: 45px;
+                // bottom: 5px;
+                left: 275px;
+                // transition: 100s linear;
+                transition: all 0.3s ease-in linear;
+
+                h1.quoteHome {
+                    position: relative;
+                    font-family: 'Chewy', cursive;
+                    color: white;
+                    font-size: 3rem;
+                    top: 30px;
+                    left: 130px;
+                    text-transform: lowercase;
+                    letter-spacing: 1.5px;
+                }
+            }
+
+            div.transparentBack:hover {
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+        }
+    }
+
+    
+    //start of footer//////
+    section.footerCats {
+        // background-color: rgb(68, 68, 68);
+        background-color: #142d4d;
+        // position: relative;
+
+        footer {
+            width: 100%;
+            height: 120px;
+            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+            // background-color: #142d4d;
+            background-color: $whiteColor;
+            position: absolute;
+            // margin-bottom: auto;
+            // display: block;
+            top: 2000px;
+
+            ul.ulFooter {
+                display: flex;
+                list-style-type: none;
+
+                img {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: 650px;
+                    // padding-top: 5px;
+                    top: 10px;
+                    padding: 2px;
+
+                }
+
+                img:hover {
+                    box-shadow: 0 0 10px $grayColor;
+                    border-radius: $radius1;
+                }
+            }
+
+            h1.h1Footer {
+                color: rgb(0, 0, 0);
+                // color: white;
+                font-family: 'Manjari', sans-serif;
+                text-align: center;
+                // position: absolute;
+                font-size: 1rem;
+                padding-top: 15px;
+            }
+        }
+
+
+    }
+
+}
+    //end of footer////////////////////////////////////////////////////////
+
+//end of cat page/////////////////////////
+// start of rodent page 
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: $whiteColor;
+    div.RodentPage {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/hampster.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    section.RodentSection {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+        h1.names {
+            font-family: 'Chewy', cursive;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #6e68cb;
+            font-size: 4em;
+            padding-top: 150px;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            color: #000000;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 60px;
+            left: 350px;
+            letter-spacing: 1px;
+            // width: 100vw;
+
+        }
+        p.RodentsToQuiz {
+            // position: relative;
+            // color: #000000;
+            font-family: 'Manjari', sans-serif;
+            font-size: 1rem;
+            top: 130px;
+            left: 620px;
+            letter-spacing: 1px;
+            color: #6e68cb;
+            // width: 50px;
+            // width: 10px;
+        }
+        section.DogsToCatsBtn {
+            position: relative;
+            left: 690px;
+            top: 155px;
+            z-index: 5;
+            width: 20px;
+            button.CatPage {
+                background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+                border: none;
+                color: $whiteColor;
+                font-family: 'Chewy', cursive;
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 2rem;
+                letter-spacing: 1.5px;
+                transition: all 200ms linear;
+            }
+            button.CatPage:hover {
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+
+        }
+
+        div.wordSection {
+            width: 100%;
+            height: 40%;
+            background-image: url(../images/background.png);
+            border-image-repeat: repeat-x;
+            // position: absolute;
+            position: absolute;
+            margin-top: 300px;
+            right: 10px;
+
+            div.transparentBack {
+                position: relative;
+                background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+                width: 900px;
+                height: 200px;
+                display: flex;
+                border-radius: $radius1;
+                opacity: 95%;
+                top: 45px;
+                // bottom: 5px;
+                left: 275px;
+                // transition: 100s linear;
+                transition: all 0.3s ease-in linear;
+
+                h1.quoteHome {
+                    position: relative;
+                    font-family: 'Chewy', cursive;
+                    color: white;
+                    font-size: 3rem;
+                    top: 30px;
+                    left: 200px;
+                    text-transform: lowercase;
+                    letter-spacing: 1.5px;
+                }
+            }
+
+            div.transparentBack:hover {
+                background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
+            }
+
+        }
+    }
+
+    
+    //start of footer//////
+    section.footerCats {
+        // background-color: rgb(68, 68, 68);
+        background-color: #142d4d;
+        // position: relative;
+
+        footer {
+            width: 100%;
+            height: 120px;
+            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+            // background-color: #142d4d;
+            background-color: $whiteColor;
+            position: absolute;
+            // margin-bottom: auto;
+            // display: block;
+            top: 2000px;
+
+            ul.ulFooter {
+                display: flex;
+                list-style-type: none;
+
+                img {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: 650px;
+                    // padding-top: 5px;
+                    top: 10px;
+                    padding: 2px;
+
+                }
+
+                img:hover {
+                    box-shadow: 0 0 10px $grayColor;
+                    border-radius: $radius1;
+                }
+            }
+
+            h1.h1Footer {
+                color: rgb(0, 0, 0);
+                // color: white;
+                font-family: 'Manjari', sans-serif;
+                text-align: center;
+                // position: absolute;
+                font-size: 1rem;
+                padding-top: 15px;
+            }
+        }
+
+
+    }
+
+}
+    //end of footer////////////////////////////////////////////////////////
+
+//end of rodent page///////////////////////////////////////////
+//start of quiz
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: $whiteColor;
+    h1 {
+        font-family: 'Chewy', cursive;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #6e68cb;
+        font-size: 4em;
+        padding-top: 150px;
+        position: relative;
+        z-index: 2;
+    }
+    
+}
+//end of quiz

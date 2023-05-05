@@ -90,10 +90,14 @@
   background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
   letter-spacing: 1.5px;
 }
-.container div.homePage {
+.container main.homeMain {
+  width: 100vw;
+  height: 100vh;
+}
+.container main.homeMain div.homePage {
   position: relative;
 }
-.container div.homePage h1 {
+.container main.homeMain div.homePage h1 {
   font-family: "Chewy", cursive;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -104,10 +108,10 @@
   position: relative;
   z-index: 2;
 }
-.container div.homePage div.mainImgs {
+.container main.homeMain div.homePage div.mainImgs {
   display: block;
 }
-.container div.homePage div.mainImgs img.catHome {
+.container main.homeMain div.homePage div.mainImgs img.catHome {
   position: relative;
   width: 550px;
   height: 550px;
@@ -116,7 +120,7 @@
   bottom: 200px;
   right: 300px;
 }
-.container div.homePage div.mainImgs img.dogHome {
+.container main.homeMain div.homePage div.mainImgs img.dogHome {
   position: relative;
   width: 350px;
   height: 350px;
@@ -125,7 +129,7 @@
   top: 40px;
   left: 490px;
 }
-.container div.homePage div.mainImgs img.dots1 {
+.container main.homeMain div.homePage div.mainImgs img.dots1 {
   position: relative;
   width: 150px;
   height: 200px;
@@ -135,7 +139,7 @@
   left: 700px;
   opacity: 50%;
 }
-.container div.homePage div.mainImgs img.dots2 {
+.container main.homeMain div.homePage div.mainImgs img.dots2 {
   position: relative;
   width: 180px;
   height: 200px;
@@ -146,21 +150,22 @@
   opacity: 50%;
   position: absolute;
 }
-.container div.homePage p {
+.container main.homeMain div.homePage p {
   padding-left: 90px;
   padding-top: 60px;
   font-size: 1rem;
   font-family: "Manjari", sans-serif;
+  letter-spacing: 1px;
 }
-.container div.homePage p.click {
-  padding-left: 120px;
+.container main.homeMain div.homePage p.click {
+  padding-left: 90px;
   color: #6e68cb;
 }
-.container div.homePage section.btn {
+.container main.homeMain div.homePage section.btn {
   padding-left: 200px;
   padding-top: 15px;
 }
-.container div.homePage section.btn button.homeBtn {
+.container main.homeMain div.homePage section.btn button.homeBtn {
   border: none;
   font-family: "Chewy", cursive;
   font-size: 1rem;
@@ -171,12 +176,12 @@
   letter-spacing: 1.5px;
   transition: all 200ms linear;
 }
-.container div.homePage section.btn button.homeBtn:hover {
+.container main.homeMain div.homePage section.btn button.homeBtn:hover {
   color: rgb(255, 255, 255);
   background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
   box-shadow: 0 0 10px rgb(128, 128, 128);
 }
-.container div.homePage div.videoBackGround {
+.container main.homeMain div.homePage div.videoBackGround {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -186,14 +191,14 @@
   justify-content: center;
   align-items: center;
 }
-.container div.homePage div.videoBackGround video.FureverVideo {
+.container main.homeMain div.homePage div.videoBackGround video.FureverVideo {
   width: 70%;
   height: auto;
   position: absolute;
   z-index: 3;
   border-radius: 2rem;
 }
-.container div.homePage div.wordSection {
+.container main.homeMain div.homePage div.wordSection {
   width: 100%;
   height: 20%;
   background-image: url(../images/background.png);
@@ -201,7 +206,7 @@
   position: absolute;
   margin-top: 50px;
 }
-.container div.homePage div.wordSection div.transparentBack {
+.container main.homeMain div.homePage div.wordSection div.transparentBack {
   position: relative;
   background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
   width: 900px;
@@ -213,7 +218,7 @@
   left: 275px;
   transition: all 0.3s ease-in linear;
 }
-.container div.homePage div.wordSection div.transparentBack h1.quoteHome {
+.container main.homeMain div.homePage div.wordSection div.transparentBack h1.quoteHome {
   position: relative;
   font-family: "Chewy", cursive;
   color: white;
@@ -223,47 +228,860 @@
   text-transform: lowercase;
   letter-spacing: 1.5px;
 }
-.container div.homePage div.wordSection div.transparentBack:hover {
+.container main.homeMain div.homePage div.wordSection div.transparentBack:hover {
   background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
   box-shadow: 0 0 10px rgb(128, 128, 128);
 }
-.container div.footer {
-  background-color: rgb(68, 68, 68);
-  position: relative;
+.container section.footer {
+  background-color: #142d4d;
 }
-.container div.footer footer {
+.container section.footer footer {
   width: 100%;
-  background-color: aqua;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2080px;
 }
-.container div.footer footer ul {
+.container section.footer footer ul.ulFooter {
   display: flex;
   list-style-type: none;
 }
-.container div.footer footer ul li {
-  width: 128px;
-  height: 128px;
+.container section.footer footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
 }
-.container div.footer footer ul li a {
-  width: 128px;
-  height: 128px;
-  display: block;
+.container section.footer footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footer footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container div.aboutPage {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  padding-left: 90px;
+  color: #6e68cb;
+  font-size: 2em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+  left: 40px;
+}
+.container div.aboutPage div.aboutImgs img.dogAbout {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  padding-right: 70px;
+  top: 120px;
+  left: 725px;
+  z-index: 3;
+}
+.container div.aboutPage div.aboutImgs img.dots1 {
+  position: absolute;
+  width: 160px;
+  height: 210px;
+  float: right;
+  padding-right: 40px;
+  top: 100px;
+  left: 1150px;
+  opacity: 50%;
+}
+.container div.aboutPage div.aboutImgs img.dots2 {
+  position: absolute;
+  width: 180px;
+  height: 200px;
+  float: right;
+  padding-right: 40px;
+  top: 400px;
+  left: 600px;
+  opacity: 50%;
+  position: absolute;
+}
+.container div.aboutPage p.aboutP {
+  position: absolute;
+  font-family: "Manjari", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  padding-top: 60px;
+}
+.container div.aboutPage p.ClickAbout {
+  position: absolute;
+  color: #6e68cb;
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 560px;
+  left: 150px;
+}
+.container div.aboutPage section.Aboutbtn {
+  position: relative;
+  padding-left: 175px;
+  top: 350px;
+}
+.container div.aboutPage section.Aboutbtn button.homeBtn {
+  border: none;
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
   transition: all 200ms linear;
 }
-.container div.footer footer ul li a#facebook {
-  background: url("../images/socialsColor.png") 0px 0px;
+.container div.aboutPage section.Aboutbtn button.homeBtn:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
 }
-.container div.footer footer ul li a#instagram {
-  background: url("../images/socialsColor.png") 128px 0px;
+.container div.aboutPage div.wordSection {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 550px;
+  right: 40px;
 }
-.container div.footer footer ul li a#twitter {
-  background: url("../images/socialsColor.png") 256px 0px;
+.container div.aboutPage div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 50px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
 }
-.container div.footer footer ul li a#facebook:hover {
-  background: url("../images/socialsBW.png") 0px 0px;
+.container div.aboutPage div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 200px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
 }
-.container div.footer footer ul li a#instagram:hover {
-  background: url("../images/socialsBW.png") 128px 0px;
+.container div.aboutPage div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
 }
-.container div.footer footer ul li a#twitter:hover {
-  background: url("../images/socialsBW.png") 256px 0px;
+.container section.footerAbout {
+  background-color: #142d4d;
+}
+.container section.footerAbout footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 1230px;
+}
+.container section.footerAbout footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerAbout footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 5px;
+  padding: 2px;
+}
+.container section.footerAbout footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerAbout footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container div.petsPage {
+  position: relative;
+}
+.container div.petsPage h1.fluffyFriends {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e68cb;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.container div.petsPage ul.petsImgs {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  height: 100px;
+  bottom: 70px;
+}
+.container div.petsPage ul.petsImgs img {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  transform: translate(60%, 50%);
+  padding: 20px;
+  margin-bottom: 60px;
+  z-index: 1;
+  transition: all 300s ease-in-out linear;
+}
+.container div.petsPage ul.petsImgs img:hover {
+  border-radius: 50%;
+  box-shadow: 0 0px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: grayscale(100%);
+}
+.container div.petsPage section.PetsBtn1 {
+  position: relative;
+  padding-left: 340px;
+  top: 400px;
+  z-index: 5;
+  width: 20px;
+}
+.container div.petsPage section.PetsBtn1 button.dogBtn {
+  border: none;
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container div.petsPage section.PetsBtn1 button.dogBtn:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container div.petsPage section.Petsbtn2 {
+  position: relative;
+  left: 680px;
+  top: 360px;
+  z-index: 5;
+  width: 20px;
+}
+.container div.petsPage section.Petsbtn2 button.catBtn {
+  border: none;
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container div.petsPage section.Petsbtn2 button.catBtn:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container div.petsPage section.Petsbtn3 {
+  position: relative;
+  left: 1050px;
+  top: 320px;
+  z-index: 5;
+  width: 20px;
+}
+.container div.petsPage section.Petsbtn3 button.rodentBtn {
+  border: none;
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container div.petsPage section.Petsbtn3 button.rodentBtn:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container div.petsPage div.AboutPets {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5835b2;
+  top: 500px;
+}
+.container div.petsPage div.AboutPets h1.MorePets {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.container div.petsPage div.AboutPets h1.MorePets:hover {
+  color: #86e3ce;
+}
+.container div.petsPage div.AboutPets p {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 360px;
+  left: 390px;
+  letter-spacing: 1px;
+}
+.container div.petsPage div.AboutPets p.TakeQuizBelow {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 600px;
+  left: 650px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.container div.petsPage section.TakeQuizBtn {
+  position: relative;
+  left: 700px;
+  top: 420px;
+  z-index: 5;
+  width: 20px;
+}
+.container div.petsPage section.TakeQuizBtn button.TakeQuiz {
+  border: none;
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  background-color: #86e3ce;
+  color: #000000;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container div.petsPage section.TakeQuizBtn button.TakeQuiz:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  color: white;
+}
+.container div.petsPage div.wordSection {
+  width: 100%;
+  height: 40%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 530px;
+  right: 10px;
+}
+.container div.petsPage div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 45px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container div.petsPage div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 70px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+.container div.petsPage div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.footerPets {
+  background-color: #142d4d;
+}
+.container section.footerPets footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2180px;
+}
+.container section.footerPets footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerPets footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
+}
+.container section.footerPets footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerPets footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container div.DogPage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/dog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.container section.DogSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.container section.DogSection h1.names {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e68cb;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.container section.DogSection p {
+  position: relative;
+  color: #000000;
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 60px;
+  left: 330px;
+  letter-spacing: 1px;
+}
+.container section.DogSection p.DogsToCats {
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 130px;
+  left: 600px;
+  letter-spacing: 1px;
+  color: #6e68cb;
+}
+.container section.DogSection section.DogsToCatsBtn {
+  position: relative;
+  left: 690px;
+  top: 155px;
+  z-index: 5;
+  width: 20px;
+}
+.container section.DogSection section.DogsToCatsBtn button.CatPage {
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container section.DogSection section.DogsToCatsBtn button.CatPage:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.DogSection div.wordSection {
+  width: 100%;
+  height: 40%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 300px;
+  right: 10px;
+}
+.container section.DogSection div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 45px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container section.DogSection div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 140px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+.container section.DogSection div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.footerDogs {
+  background-color: #142d4d;
+}
+.container section.footerDogs footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2000px;
+}
+.container section.footerDogs footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerDogs footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
+}
+.container section.footerDogs footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerDogs footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container div.CatPage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.container section.CatSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.container section.CatSection h1.names {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e68cb;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.container section.CatSection p {
+  position: relative;
+  color: #000000;
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 60px;
+  left: 330px;
+  letter-spacing: 1px;
+}
+.container section.CatSection p.DogsToCats {
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 130px;
+  left: 600px;
+  letter-spacing: 1px;
+  color: #6e68cb;
+}
+.container section.CatSection section.DogsToCatsBtn {
+  position: relative;
+  left: 690px;
+  top: 155px;
+  z-index: 5;
+  width: 20px;
+}
+.container section.CatSection section.DogsToCatsBtn button.CatPage {
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container section.CatSection section.DogsToCatsBtn button.CatPage:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.CatSection div.wordSection {
+  width: 100%;
+  height: 40%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 300px;
+  right: 10px;
+}
+.container section.CatSection div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 45px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container section.CatSection div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 130px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+.container section.CatSection div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.footerCats {
+  background-color: #142d4d;
+}
+.container section.footerCats footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2000px;
+}
+.container section.footerCats footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerCats footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
+}
+.container section.footerCats footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerCats footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container div.RodentPage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/hampster.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.container section.RodentSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.container section.RodentSection h1.names {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e68cb;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.container section.RodentSection p {
+  position: relative;
+  color: #000000;
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 60px;
+  left: 350px;
+  letter-spacing: 1px;
+}
+.container section.RodentSection p.RodentsToQuiz {
+  font-family: "Manjari", sans-serif;
+  font-size: 1rem;
+  top: 130px;
+  left: 620px;
+  letter-spacing: 1px;
+  color: #6e68cb;
+}
+.container section.RodentSection section.DogsToCatsBtn {
+  position: relative;
+  left: 690px;
+  top: 155px;
+  z-index: 5;
+  width: 20px;
+}
+.container section.RodentSection section.DogsToCatsBtn button.CatPage {
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+}
+.container section.RodentSection section.DogsToCatsBtn button.CatPage:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.RodentSection div.wordSection {
+  width: 100%;
+  height: 40%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 300px;
+  right: 10px;
+}
+.container section.RodentSection div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 45px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container section.RodentSection div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 200px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+.container section.RodentSection div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.footerCats {
+  background-color: #142d4d;
+}
+.container section.footerCats footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2000px;
+}
+.container section.footerCats footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerCats footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
+}
+.container section.footerCats footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerCats footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container h1 {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e68cb;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
