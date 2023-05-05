@@ -1075,7 +1075,7 @@
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
-.container h1 {
+.container div.quizPage h1.quizH1 {
   font-family: "Chewy", cursive;
   letter-spacing: 1px;
   text-align: center;
@@ -1084,4 +1084,408 @@
   padding-top: 150px;
   position: relative;
   z-index: 2;
+}
+.container div.quizPage img.dogPaws {
+  margin-top: 100px;
+  width: 550px;
+  height: 550px;
+  margin-left: 460px;
+}
+.container div.quizPage img.QuizPattern1 {
+  position: relative;
+  height: 250px;
+  width: 150px;
+  margin-bottom: 370px;
+  right: 40px;
+  opacity: 50%;
+}
+.container div.quizPage img.QuizPattern2 {
+  position: absolute;
+  height: 250px;
+  width: 170px;
+  top: 700px;
+  left: 300px;
+  opacity: 50%;
+  z-index: 3;
+}
+.container div.quizPage section.QuizSection {
+  width: 100vw;
+  height: 200vh;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  margin-top: 100px;
+}
+.container div.quizPage section.QuizSection h1.whatPet {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.container div.quizPage section.QuizSection form {
+  height: 1000px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 20px rgb(80, 80, 80);
+  margin-top: 100px;
+}
+.container div.quizPage section.QuizSection form h2 {
+  font-family: "Chewy", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e68cb;
+  font-size: 2.5em;
+  position: relative;
+  z-index: 2;
+}
+.container div.quizPage section.QuizSection form label {
+  top: 20px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Manjari", sans-serif;
+  padding-left: 20px;
+}
+.container div.quizPage section.QuizSection form input[type=submit] {
+  position: relative;
+  background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+  left: 200px;
+  top: 40px;
+}
+.container div.quizPage section.QuizSection form input[type=submit]:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container div.quizPage section.QuizSection form body {
+  background-color: #f0f0f0;
+}
+.container div.quizPage section.QuizSection form h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.container div.quizPage section.QuizSection form p {
+  margin: 20px;
+  font-family: "Manjari", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.container div.quizPage section.QuizSection form #pet {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.container div.quizPage div.wordSection {
+  width: 100%;
+  height: 40%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 250px;
+  right: 10px;
+}
+.container div.quizPage div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 45px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container div.quizPage div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 350px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.container div.quizPage div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container div.quizPage section.QuizPageBtn {
+  position: relative;
+  left: 690px;
+  top: 450px;
+  z-index: 5;
+  width: 20px;
+}
+.container div.quizPage section.QuizPageBtn button.Contact {
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+  background-color: white;
+  color: #5021c9;
+}
+.container div.quizPage section.QuizPageBtn button.Contact:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(34, 34, 34);
+}
+.container section.footerQuiz {
+  background-color: #142d4d;
+}
+.container section.footerQuiz footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 3000px;
+}
+.container section.footerQuiz footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerQuiz footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
+}
+.container section.footerQuiz footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerQuiz footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container body {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+}
+.container h1.quizResults {
+  text-align: center;
+  margin-top: 50px;
+  color: #5835b2;
+  font-family: "Chewy", cursive;
+  font-size: 4.5rem;
+  letter-spacing: 1.5px;
+}
+.container p.resultP {
+  margin: 20px;
+  font-size: 24px;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+}
+.container #pet {
+  font-family: "Manjari", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5021c9;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container img.ContactCat {
+  width: 500px;
+  height: 500px;
+  z-index: 6;
+  top: 300px;
+  position: absolute;
+  left: 850px;
+}
+.container img.ContactDots1 {
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  z-index: 6;
+  top: 100px;
+  margin-left: 800px;
+  opacity: 50%;
+}
+.container img.ContactDots2 {
+  position: absolute;
+  width: 150px;
+  height: 230px;
+  z-index: 7;
+  top: 700px;
+  margin-left: 1300px;
+  opacity: 50%;
+}
+.container div.contactPage {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 50vw;
+  height: 90vh;
+  border-radius: 2rem;
+  top: 50px;
+  left: 40px;
+}
+.container div.contactPage h1.contactUsH1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: "Chewy", cursive;
+  font-size: 4.5rem;
+  letter-spacing: 1.5px;
+}
+.container div.contactPage form {
+  width: 40vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 2rem;
+}
+.container div.contactPage form label {
+  padding-top: 40px;
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Manjari", sans-serif;
+  font-size: 1.5rem;
+}
+.container div.contactPage form input[type=text],
+.container div.contactPage form input[type=email],
+.container div.contactPage form textarea {
+  font-family: "Manjari", sans-serif;
+  top: 40px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.container div.contactPage form input[type=text]:focus,
+.container div.contactPage form input[type=email]:focus,
+.container div.contactPage form textarea:focus {
+  width: 100%;
+  border: none;
+  outline: 0;
+  background-color: #bdbdbd;
+}
+.container div.contactPage form textarea {
+  height: 150px;
+}
+.container div.contactPage form button[type=submit] {
+  margin-left: 230px;
+  width: 20%;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Chewy", cursive;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  transition: all 200ms linear;
+  background-color: white;
+  color: #5021c9;
+  margin-top: 20px;
+}
+.container div.contactPage form button[type=submit]:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(34, 34, 34);
+}
+.container div.contactPage div.wordSection {
+  width: 100vw;
+  height: 40%;
+  background-image: url(../images/background.png);
+  border-image-repeat: repeat-x;
+  position: absolute;
+  margin-top: 250px;
+}
+.container div.contactPage div.wordSection div.transparentBack {
+  position: relative;
+  background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+  width: 900px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+  opacity: 95%;
+  top: 45px;
+  left: 275px;
+  transition: all 0.3s ease-in linear;
+}
+.container div.contactPage div.wordSection div.transparentBack h1.quoteHome {
+  position: relative;
+  font-family: "Chewy", cursive;
+  color: white;
+  font-size: 3rem;
+  top: 30px;
+  left: 200px;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.container div.contactPage div.wordSection div.transparentBack:hover {
+  background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+.container section.footerContact {
+  background-color: #142d4d;
+}
+.container section.footerContact footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 1400px;
+}
+.container section.footerContact footer ul.ulFooter {
+  display: flex;
+  list-style-type: none;
+}
+.container section.footerContact footer ul.ulFooter img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 650px;
+  top: 10px;
+  padding: 2px;
+}
+.container section.footerContact footer ul.ulFooter img:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+  border-radius: 2rem;
+}
+.container section.footerContact footer h1.h1Footer {
+  color: rgb(0, 0, 0);
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */

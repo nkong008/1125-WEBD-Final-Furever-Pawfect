@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,21 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/pawfect.png">
 </head>
+
 <body>
 
     <div class="container">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__listlogo"> <span><img style="width: 100px; height: 100px;" src="../images/LOGO1.png" alt="logo"></span></li>
+                <li class="nav__listlogo"> <span><img style="width: 100px; height: 100px;" src="../images/LOGO1.png"
+                            alt="logo"></span></li>
                 <li class="nav__listitem"><a href="../index.html">Home</a></li>
                 <li class="nav__listitem"><a href="about.html">About</a></li>
                 <li class="nav__listitem"><a href="pets.html">Pets</a>
                     <ul class="nav__listitemdrop">
-                        <li><a href="dogs.html" style="color: white;">Dogs</a></li> 
-                        <li><a href="cats.html" style="color: white;">Cats</a></li> 
-                        <li><a href="redents.html" style="color: white;">Rodents</a></li> 
+                        <li><a href="dogs.html" style="color: white;">Dogs</a></li>
+                        <li><a href="cats.html" style="color: white;">Cats</a></li>
+                        <li><a href="redents.html" style="color: white;">Rodents</a></li>
                     </ul>
                 </li>
                 <li class="nav__listitem"><a href="quiz.html">Quiz</a></li>
@@ -29,12 +32,78 @@
         </nav>
 
         <div class="quizPage">
-            <h1>QUIZ</h1>
-            <img src="../images/QuizPaw.png" alt="paws">
+            <h1 class="quizH1">QUIZ</h1>
+            <img class="dogPaws" src="../images/QuizPaws.png" alt="paws">
+            <img class="QuizPattern1" src="../images/dots1.png" alt="dots">
+            <img class="QuizPattern2" src="../images/pattern2.png" alt="dots">
+
+            <section class="QuizSection">
+                <h1 class="whatPet">WHAT PET SHOULD YOU GET?</h1>
+                <!-- start of form  -->
+                <form id="quiz">
+                    <h2>Question 1:</h2>
+                    <p>How much time are you willing to spend taking care of your pet?</p>
+                    <label><input type="radio" name="time" value="1"> A lot of time</label><br>
+                    <label><input type="radio" name="time" value="2"> Some time</label><br>
+                    <label><input type="radio" name="time" value="3"> Not much time</label><br>
+
+                    <h2>Question 2:</h2>
+                    <p>How much space do you have for your pet?</p>
+                    <label><input type="radio" name="space" value="1"> A lot of space</label><br>
+                    <label><input type="radio" name="space" value="2"> Some space</label><br>
+                    <label><input type="radio" name="space" value="3"> Not much space</label><br>
+
+                    <h2>Question 3:</h2>
+                    <p>Do you want a pet that is social and likes to interact with people?</p>
+                    <label><input type="radio" name="social" value="1"> Yes</label><br>
+                    <label><input type="radio" name="social" value="2"> Somewhat</label><br>
+                    <label><input type="radio" name="social" value="3"> No</label><br>
+
+                    <input type="Submit" value="Submit">
+                </form>
+
+                <section class="QuizPageBtn">
+                    <a href="contact.html">
+                        <button type="click me" class="Contact" style="width: 90px;">
+                            Contact
+                        </button>
+                    </a>
+                </section>
+
+
+                <!-- start quote section -->
+                <div class="wordSection">
+                    <img class="wordImg" src="images/background.png" alt="">
+                    <div class="transparentBack">
+                        <h1 class="quoteHome" style="letter-spacing: 1.5px;">
+                            CONTACT US
+                        </h1>
+                    </div>
+                </div>
+                <!-- end of quote section-->
+
+
+                <!-- end of form -->
+            </section>
+
         </div>
+
+        <!-- start of footer -->
+        <section class="footerQuiz">
+            <footer>
+                <ul class="ulFooter">
+                    <img src="../images/Facebook.png" alt="facebook">
+                    <img src="../images/Instagram.png" alt="instagram">
+                    <img src="../images/Twitter.png" alt="twitter">
+                </ul>
+                <h1 class="h1Footer">©2023, Furever Pawfect</h1>
+            </footer>
+        </section>
+        <!-- end of footer -->
     </div>
     <script src="../js/script.js"></script>
 
 
 </body>
+
 </html>
