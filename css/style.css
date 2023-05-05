@@ -174,6 +174,7 @@
 .container div.homePage section.btn button.homeBtn:hover {
   color: rgb(255, 255, 255);
   background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
 }
 .container div.homePage div.videoBackGround {
   position: relative;
@@ -224,10 +225,45 @@
 }
 .container div.homePage div.wordSection div.transparentBack:hover {
   background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+  box-shadow: 0 0 10px rgb(128, 128, 128);
 }
-
-footer {
-  width: 100vw;
-  height: 30%;
-  background-color: #5021c9;
+.container div.footer {
+  background-color: rgb(68, 68, 68);
+  position: relative;
+}
+.container div.footer footer {
+  width: 100%;
+  background-color: aqua;
+}
+.container div.footer footer ul {
+  display: flex;
+  list-style-type: none;
+}
+.container div.footer footer ul li {
+  width: 128px;
+  height: 128px;
+}
+.container div.footer footer ul li a {
+  width: 128px;
+  height: 128px;
+  display: block;
+  transition: all 200ms linear;
+}
+.container div.footer footer ul li a#facebook {
+  background: url("../images/socialsColor.png") 0px 0px;
+}
+.container div.footer footer ul li a#instagram {
+  background: url("../images/socialsColor.png") 128px 0px;
+}
+.container div.footer footer ul li a#twitter {
+  background: url("../images/socialsColor.png") 256px 0px;
+}
+.container div.footer footer ul li a#facebook:hover {
+  background: url("../images/socialsBW.png") 0px 0px;
+}
+.container div.footer footer ul li a#instagram:hover {
+  background: url("../images/socialsBW.png") 128px 0px;
+}
+.container div.footer footer ul li a#twitter:hover {
+  background: url("../images/socialsBW.png") 256px 0px;
 }/*# sourceMappingURL=style.css.map */

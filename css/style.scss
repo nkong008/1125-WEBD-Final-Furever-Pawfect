@@ -257,6 +257,7 @@ $letterSpacing: 1.5px;
                 color: rgb(255, 255, 255);
                 background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
                 // box-shadow: 0 0 5px $darkBlue;
+                box-shadow: 0 0 10px $grayColor;
             }
 
             // div.catHomePage {
@@ -327,20 +328,81 @@ $letterSpacing: 1.5px;
             }
             div.transparentBack:hover {
                 background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+                box-shadow: 0 0 10px $grayColor;
             }
        
         }
 
     }
+
+
+ //start of footer//////
+ div.footer {
+    background-color: rgb(68, 68, 68);
+    position: relative;
+
+    footer {
+        width: 100%;
+        // height: 100px;
+        background-color: aqua;
+        // position: absolute;
+        // bottom: 0%;
+        // top: 900px;
+        // margin-bottom: auto;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                width: 128px;
+                height: 128px;
+                //need a element to propery display items by using display block
+                a {
+                    width: 128px;
+                    height: 128px;
+                    //blcok needed otherwise content will not show
+                    display: block;
+                    transition: all 200ms linear;
+                }
+                //after each image you can position your image by using numbered px units to show a spacific image 
+                //remember to use easy units like 100's (especially when creating the image)
+
+                a#facebook {
+                    background: url("../images/socialsColor.png") 0px 0px;
+                }
+
+                a#instagram {
+                    background: url("../images/socialsColor.png") 128px 0px;
+                }
+
+                a#twitter {
+                    background: url("../images/socialsColor.png")256px 0px;
+                }
+
+                //hover state/////
+
+                a#facebook:hover {
+                    background: url("../images/socialsBW.png") 0px 0px;
+                }
+
+                a#instagram:hover {
+                    background: url("../images/socialsBW.png") 128px 0px;
+                }
+
+                a#twitter:hover {
+                    background: url("../images/socialsBW.png")256px 0px;
+                }
+
+            }
+        }
+    }
 }
 
-//end of main home page////////////////////////////////////////////////
-//start of footer//////
-footer {
-    width: 100vw;
-    height: 30%;
-    background-color: #5021c9;
-
-}
 
 //end of footer////////////////////////////////////////////////////////
+
+}
+
+
+//end of main home page////////////////////////////////////////////////
