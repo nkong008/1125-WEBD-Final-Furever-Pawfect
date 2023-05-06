@@ -13,18 +13,15 @@
 // $opacity: 90%;
 // $lightPurple: rgb(192, 174, 211);
 
-//Creating scss variables
+//scss variables
 $radius: 0.2rem;
 $radius1: 2rem;
 $whiteColor: rgba(255, 255, 255, 1);
 $grayColor: rgba(128, 128, 128, 1);
 $lightGrayColor: rgba(128, 128, 128, 0.4);
-$blueColor: rgba(0, 0, 255, 1);
 $darkBlue: rgb(12, 12, 64);
-$manjari: 'Manjari',
-sans-serif;
-$chewy: 'Chewy',
-cursive;
+$manjari: 'Manjari', sans-serif;
+$chewy: 'Chewy', cursive;
 $gradiantButton: linear-gradient(90deg, #5c88c0 0%, #5835b2 100%);
 $fontSize1: 3.5em;
 $letterSpacing: 1.5px;
@@ -48,9 +45,6 @@ $letterSpacing: 1.5px;
         letter-spacing: 1.5px;
         font-size: 1rem;
         background-color: $whiteColor;
-
-        // class concatentaion
-        // originally it would have been .nav__list
 
         &__list {
             display: flex;
@@ -83,10 +77,6 @@ $letterSpacing: 1.5px;
                 transition: all 0.3s ease-in linear;
 
 
-                // pseudo class
-                // would originally be .list:item
-                // The ::first-line pseudo-element is used to add a special style to the first line of a text.
-                // The ::first-line pseudo-element can only be applied to block-level elements.
                 &::after {
                     content: "";
                     width: 0;
@@ -104,14 +94,6 @@ $letterSpacing: 1.5px;
                     width: 70%;
                 }
 
-                // }
-
-                //     &:hover{
-                //     background-color: $grayColor;
-                //     // color: $whiteColor;
-                //     border-radius: $radius1;
-                //     padding: 10px 15px;
-                // }
 
                 &:hover ul,
                 &:focus ul {
@@ -267,15 +249,6 @@ $letterSpacing: 1.5px;
                     // box-shadow: 0 0 5px $darkBlue;
                     box-shadow: 0 0 10px $grayColor;
                 }
-
-                // div.catHomePage {
-                //     position: absolute;
-                // img.catHome {
-                //     position: absolute;
-                //     width: 50%;
-                //     height:50%;
-                //     float: top;
-                // }
             }
 
             div.videoBackGround {
@@ -301,11 +274,6 @@ $letterSpacing: 1.5px;
             div.wordSection {
                 width: 100%;
                 height: 20%;
-                // img.wordImg {
-                //     background-repeat: repeat-x;
-                //     width: 50%;
-                //     height: 40%;
-                // }
                 background-image: url(../images/background.png);
                 border-image-repeat: repeat-x;
                 position: absolute;
@@ -313,9 +281,6 @@ $letterSpacing: 1.5px;
 
                 div.transparentBack {
                     position: relative;
-                    // justify-content: center;
-                    // align-items: center;
-                    // position: absolute;
                     background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
                     width: 900px;
                     height: 200px;
@@ -328,6 +293,7 @@ $letterSpacing: 1.5px;
                     transition: all 0.3s ease-in linear;
 
                     h1.quoteHome {
+                        // position: absolute;
                         position: relative;
                         font-family: 'Chewy', cursive;
                         color: white;
@@ -359,12 +325,8 @@ $letterSpacing: 1.5px;
         footer {
             width: 100%;
             height: 120px;
-            // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
-            // background-color: #142d4d;
             background-color: $whiteColor;
             position: absolute;
-            // margin-bottom: auto;
-            // display: block;
             top: 2080px;
 
             ul.ulFooter {
@@ -428,9 +390,6 @@ $letterSpacing: 1.5px;
         left: 40px;
 
         div.aboutImgs {
-            // position: absolute;
-            // position: relative;
-
             img.dogAbout {
                 // position: relative;
                 position: absolute;
@@ -545,7 +504,7 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 30px;
                     left: 200px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     letter-spacing: 1.5px;
                 }
             }
@@ -767,7 +726,8 @@ $letterSpacing: 1.5px;
             }
 
             h1.MorePets:hover {
-                color: #86e3ce;
+                color: #e568b1;
+                // opacity: 80%;
             }
 
             p {
@@ -799,15 +759,15 @@ $letterSpacing: 1.5px;
             top: 420px;
             z-index: 5;
             width: 20px;
-
+            
             button.TakeQuiz {
                 border: none;
                 font-family: 'Chewy', cursive;
                 font-size: 1rem;
                 // background-image: linear-gradient(90deg, #5c88c0 0%, #5021c9 100%);
-                background-color: #86e3ce;
+                background-color: #e568b1;
                 // color: $whiteColor;
-                color: #000000;
+                color: #ffffff;
                 padding: 10px;
                 border-radius: 2rem;
                 letter-spacing: 1.5px;
@@ -817,6 +777,7 @@ $letterSpacing: 1.5px;
             button.TakeQuiz:hover {
                 background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
                 color: white;
+                box-shadow: 0 0 10px black;
             }
         }
 
@@ -855,7 +816,7 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 30px;
                     left: 70px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     letter-spacing: 1.5px;
                 }
             }
@@ -974,16 +935,14 @@ $letterSpacing: 1.5px;
         }
 
         p.DogsToCats {
-            // position: relative;
-            // color: #000000;
             font-family: 'Manjari', sans-serif;
             font-size: 1rem;
             top: 130px;
-            left: 600px;
+            margin-left: 270px;
             letter-spacing: 1px;
             color: #6e68cb;
-            // width: 50px;
-            // width: 10px;
+            z-index: 7;
+
         }
 
         section.DogsToCatsBtn {
@@ -1045,7 +1004,7 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 30px;
                     left: 140px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     letter-spacing: 1.5px;
                 }
             }
@@ -1234,7 +1193,7 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 30px;
                     left: 130px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     letter-spacing: 1.5px;
                 }
             }
@@ -1421,7 +1380,8 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 30px;
                     left: 200px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
+                    // text-transform: uppercase;
                     letter-spacing: 1.5px;
                 }
             }
@@ -1648,7 +1608,7 @@ $letterSpacing: 1.5px;
             border-image-repeat: repeat-x;
             // position: absolute;
             position: absolute;
-            margin-top: 250px;
+            margin-top: 200px;
             right: 10px;
 
             div.transparentBack {
@@ -1672,7 +1632,7 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 30px;
                     left: 350px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     letter-spacing: 1.5px;
                     text-transform: uppercase;
                 }
@@ -1864,7 +1824,8 @@ $letterSpacing: 1.5px;
             // color:  #e568b1 ;
         }
         position: relative;
-        background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+        // background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
+        background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
         width: 50vw;
         height: 90vh;
         border-radius: $radius1;
@@ -1913,7 +1874,7 @@ $letterSpacing: 1.5px;
             width: 100%;
             border: none;
             outline: 0;
-            background-color: #bdbdbd;
+            background-color: #dcdcdc;
            }
 
           
@@ -1939,7 +1900,8 @@ $letterSpacing: 1.5px;
           
           button[type="submit"]:hover {
             color: rgb(255, 255, 255);
-            background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+            // background-image: linear-gradient(225deg, #e568b1 0%, #784BA0 50%, #2B86C5 100%);
+            background-image: linear-gradient(90deg, #142d4d 0%, #5840df 100%);
             box-shadow: 0 0 10px rgb(34, 34, 34);
           }
 
@@ -1976,9 +1938,9 @@ $letterSpacing: 1.5px;
                     font-size: 3rem;
                     top: 70px;
                     left: 50px;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     letter-spacing: 1.5px;
-                    text-transform: uppercase;
+                    text-transform: lowercase;
                 }
             }
 
