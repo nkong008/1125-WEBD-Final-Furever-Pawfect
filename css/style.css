@@ -1433,7 +1433,7 @@
   display: flex;
   border-radius: 2rem;
   opacity: 95%;
-  top: 45px;
+  top: 20px;
   left: 275px;
   transition: all 0.3s ease-in linear;
 }
